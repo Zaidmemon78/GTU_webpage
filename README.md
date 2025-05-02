@@ -28,6 +28,6 @@ Significant effort was made to match the original GTU portal's design language.
 
 | Element         | Original GTU Portal Screenshot                    | Replicated Version Screenshot                        | Notes                                                                 |
 | :-------------- | :------------------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------------------- |
-| **Header**      | [PLACEHOLDER: Screenshot Link/Path of Original Header] | [PLACEHOLDER: Screenshot Link/Path of Your Header]       | Matched background color, logo placement, title style, logout button. |
-| **Sidebar**     | [PLACEHOLDER: Screenshot Link/Path of Original Sidebar] | [PLACEHOLDER: Screenshot Link/Path of Your Sidebar]      | Matched background color, link styling, icons, active state, hover.   |
+| **Header**      | [PLACEHOLDER: Screenshot Link/Path of Original Header] | [PLACEHOLDER:https://1drv.ms/i/c/6496ba0079bc8da2/ESnaBUoDSidPg4Vf1zGpQAgBliwe8vftTi5gBmr-IvCAHw?e=jtRYpf ]       | Matched background color, logo placement, title style, logout button. |
+| **Sidebar**     | [PLACEHOLDER: Screenshot Link/Path of Original Sidebar] | [PLACEHOLDER: https://1drv.ms/i/c/6496ba0079bc8da2/ESnaBUoDSidPg4Vf1zGpQAgBliwe8vftTi5gBmr-IvCAHw?e=jtRYpf]      | Matched background color, link styling, icons, active state, hover.   |
 | **Feature Panel**| (N/A - New Feature)                               | [PLACEHOLDER: https://1drv.ms/i/c/6496ba0079bc8da2/EQKrUPpnN39JgHtnbhmVwKcBiuSm8LxSiUk9qKqawqJQOw?e=ugOvV4]| Styled the new feature using panels similar to GTU's info sections.   |
