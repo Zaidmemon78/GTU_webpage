@@ -1,0 +1,311 @@
+/* --- BASE & BODY STYLES --- */
+body {
+    font-family: 'Ruda', sans-serif; /* Set Ruda as primary font */
+    font-size: 13px;
+    color: #797979; /* Default body text color */
+    background-color: #f2f2f2; /* Light grey page background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar if content is slightly wide */
+}
+
+/* Helper to make main content take up available space */
+.main-wrapper {
+    min-height: calc(100vh - 56px); /* Adjust 56px based on actual header height */
+    display: flex; /* Use flex for sidebar + content */
+}
+
+/* --- HEADER STYLES --- */
+.header {
+  background-color: #FF865C !important; /* Header background color */
+  padding: 8px 15px !important; /* Adjusted padding */
+  font-family: 'Ruda', sans-serif;
+  font-size: 14px; /* Base font for header */
+  display: flex;
+  align-items: center;
+  min-height: 56px; /* Minimum header height */
+  color: white; /* Default header text color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+  position: sticky; /* Make header sticky? Optional */
+  top: 0;
+  z-index: 1020; /* Ensure header is above other content */
+}
+
+/* Header Logo Styling */
+.header .logo b {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 5px;
+}
+.header .logo {
+    text-decoration: none;
+}
+.header .logo:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+.header .logo img {
+    vertical-align: middle;
+}
+
+/* Logout Button Styles */
+#logout-button {
+  background-color: #424a5d !important;
+  color: #f2f2f2 !important;
+  padding: 5px 15px !important;
+  font-size: 12px !important;
+  font-family: 'Ruda', sans-serif;
+  border: 1px solid #64c3c2 !important; /* Using the border seen in HTML */
+  border-radius: 4px !important; /* Using the radius seen in HTML */
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.5; /* Ensure text is centered vertically */
+  transition: opacity 0.2s ease-in-out;
+}
+#logout-button:hover {
+   opacity: 0.85; /* Slight fade on hover */
+   color: #fff !important;
+   text-decoration: none;
+}
+
+/* --- SIDEBAR STYLES --- */
+#sidebar {
+  width: 250px; /* Fixed sidebar width */
+  flex-shrink: 0; /* Prevent shrinking */
+  min-height: calc(100vh - 56px); /* Full height minus header */
+  background-color: #424a5d; /* Sidebar background */
+  padding: 15px 0px; /* Vertical padding */
+  font-family: 'Ruda', sans-serif;
+  font-size: 13px;
+  color: #AEB2B7; /* Default text color inside sidebar */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: sticky; /* Make sidebar sticky */
+  top: 56px; /* Stick below the header */
+  height: calc(100vh - 56px); /* Fixed height for sticky */
+  overflow-y: auto; /* Add scroll if content exceeds height */
+}
+
+/* Hide scrollbar */
+#sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+#sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+#sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* Sidebar Profile Info Section */
+#sidebar .profile-info {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    padding-left: 10px; /* Add horizontal padding */
+    padding-right: 10px;
+}
+#sidebar .centered {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #EAEAEA;
+}
+#sidebar .enrollment-no span {
+    font-size: 0.9em;
+    color: #bdc1c7;
+}
+#sidebar .student-name span {
+    font-weight: 500;
+    font-size: 0.95em;
+    display: block; /* Ensure it takes full width for centering */
+}
+
+/* Sidebar Profile Picture */
+#sidebar .profile-pic img {
+    display: block;
+    margin: 5px auto 10px auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #AEB2B7;
+}
+
+/* Sidebar Menu List */
+.sidebar-menu {
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-menu li {
+  margin-bottom: 4px;
+}
+
+/* Sidebar Menu Links */
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  padding: 9px 10px;
+  font-size: 12px;
+  font-family: 'Ruda', sans-serif;
+  text-decoration: none;
+  color: #AEB2B7; /* Normal link text color */
+  border-radius: 4px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Sidebar Link Icons */
+.sidebar-menu a i.fa-fw { /* Target only fixed-width icons */
+  margin-right: 10px;
+  width: 1.28571429em; /* Standard FontAwesome fixed width */
+  text-align: center;
+  font-size: 1.1em; /* Slightly larger icons */
+  color: inherit; /* Icon color inherits link color */
+  vertical-align: middle;
+}
+
+/* Sidebar Link Hover State */
+.sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.08); /* Slightly more visible hover */
+  color: #FF865C; /* Orange text color on hover */
+  text-decoration: none;
+}
+.sidebar-menu a:hover i {
+    color: #FF865C; /* Orange icon color on hover */
+}
+
+/* Active Sidebar Link State */
+.sidebar-menu li.active > a { /* Target direct child 'a' */
+  background-color: #FF865C; /* Orange background */
+  color: #FFFFFF;           /* White text */
+  font-weight: bold;
+}
+.sidebar-menu li.active > a i {
+    color: #FFFFFF; /* White icon */
+}
+
+
+/* --- MAIN CONTENT AREA --- */
+#main-content {
+   background-color: white;
+   flex-grow: 1; /* Allow content area to take remaining space */
+   padding: 25px;
+}
+
+#main-content h4, #main-content h5, #main-content h6 {
+    color: #333;
+}
+
+/* --- PANEL STYLING FOR FEATURE --- */
+.info-panel {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 25px; /* Increased space below panels */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0; /* Slightly darker border */
+}
+
+.info-panel .panel-heading {
+  background-color: #FF865C; /* Orange header */
+  color: #ffffff;
+  padding: 12px 15px; /* Slightly more padding */
+  border-bottom: 1px solid #e0e0e0; /* Add bottom border */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  text-align: center;
+}
+
+.info-panel .panel-heading h5 {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.05rem; /* Slightly larger heading */
+}
+
+.info-panel .panel-body-content {
+  padding: 25px; /* More padding inside body */
+}
+
+/* Feature content styling */
+.info-panel .panel-body-content p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px; /* More space after paragraph */
+}
+.info-panel .panel-body-content .form-group label {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #333;
+    padding-top: calc(0.375rem + 1px); /* Align label vertically with sm input */
+}
+.info-panel .panel-body-content #resultsArea h6 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Make form elements slightly smaller */
+.info-panel .form-control-sm {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    height: calc(1.5em + 0.5rem + 2px);
+}
+.info-panel .btn-sm {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Use theme color for primary button */
+.info-panel .btn-primary {
+    background-color: #FF865C !important;
+    border-color: #FF865C !important;
+    color: white !important;
+}
+.info-panel .btn-primary:hover {
+    background-color: #e87044 !important;
+    border-color: #e87044 !important;
+}
+
+/* Results List Styling */
+#resultsArea .list-group-item {
+    font-size: 0.9em;
+    padding: 0.6rem 1rem;
+    border-color: #eee;
+}
+#resultsArea .list-group-item:first-child {
+    border-top-left-radius: 0.2rem;
+     border-top-right-radius: 0.2rem;
+}
+#resultsArea .list-group-item:last-child {
+    border-bottom-left-radius: 0.2rem;
+     border-bottom-right-radius: 0.2rem;
+}
+/* Specific styles for status messages in results */
+#resultsArea .list-group-item-danger,
+#resultsArea .list-group-item-warning {
+    font-weight: 500;
+}
+
+
+/* --- UTILITY STYLES --- */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.mb-1 { margin-bottom: 0.25rem !important; }
+.mb-2 { margin-bottom: 0.5rem !important; }
+.mr-2 { margin-right: 0.5rem !important; }
+.p-2 { padding: 0.5rem !important; }
+.p-4 { padding: 1.5rem !important; }
+/* Add other utilities if needed */

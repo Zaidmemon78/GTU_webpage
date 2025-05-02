@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTU Replica - Hackathon</title>
+    <!-- Link Bootstrap CSS (Using CDN for simplicity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- Link Font Awesome CSS (Using CDN for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link Google Font Ruda (if available, otherwise defaults to sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link Tumhari Custom CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Assuming css/style.css path -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="#" class="logo text-white text-decoration-none d-flex align-items-center">
+                 <!-- Using Local GTU Logo Path -->
+                 <img src="images/gtu_logo.png" width="40" height="40" alt="Logo" class="mr-2">
+                <b>Gujarat Technological University</b>
+            </a>
+            <a id="logout-button" href="#" class="btn">
+                <b>Logout</b>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Wrapper for Sidebar and Content -->
+    <div class="main-wrapper d-flex">
+
+        <!-- Sidebar Section -->
+        <aside id="sidebar">
+            <div class="profile-info p-2">
+                <h5 class="centered enrollment-no">
+                    <span>231260116021</span> <!-- Placeholder Enrollment -->
+                </h5>
+                <p class="centered profile-pic">
+                    <!-- Using Local Profile Picture Path -->
+                    <img src="images/profile_pic.png" class="img-fluid rounded-circle mb-2" alt="Profile">
+                </p>
+                 <h5 class="centered student-name">
+                     <span>MEMON MOHAMMED ZAID AZAZ</span> <!-- Placeholder Name -->
+                 </h5>
+            </div>
+
+            <ul class="sidebar-menu">
+                 <!-- === YOUR NEW FEATURE (ACTIVE BY DEFAULT) === -->
+                 <li class="active mb-1">
+                    <a href="#company-suggestions-feature" class="text-white text-decoration-none"> <!-- Link to the feature div -->
+                       <i class="fas fa-building fa-fw"></i>
+                       <span>Company Suggestions</span>
+                    </a>
+                 </li>
+
+                 <!-- === DUMMY HOME LINK === -->
+                 <li class="mb-1">
+                    <a href="#" class="text-decoration-none"> <!-- Changed href="#" -->
+                        <i class="fas fa-home fa-fw"></i>
+                        <span>Home</span>
+                    </a>
+                 </li>
+
+                 <!-- === Other Existing GTU items === -->
+                 <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                        <i class="fas fa-file-alt fa-fw"></i>
+                        <span>Examform</span>
+                    </a>
+                 </li>
+                 <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                        <i class="fas fa-eye fa-fw"></i>
+                        <span>Answer Sheet View</span>
+                    </a>
+                 </li>
+                 <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-graduation-cap fa-fw"></i>
+                        <span>Convocation</span>
+                    </a>
+                 </li>
+                  <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-history fa-fw"></i>
+                        <span>Recheck/Reassess History</span>
+                    </a>
+                 </li>
+                  <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-stamp fa-fw"></i>
+                        <span>Degree Verification</span>
+                    </a>
+                 </li>
+                   <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-road fa-fw"></i>
+                        <span>Marksheet Tracker</span>
+                    </a>
+                 </li>
+                   <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-truck fa-fw"></i>
+                        <span>Certificate Tracking</span>
+                    </a>
+                 </li>
+                 <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-poll-h fa-fw"></i>
+                        <span>My Results</span>
+                    </a>
+                 </li>
+                  <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-trophy fa-fw"></i>
+                        <span>Grade History</span>
+                    </a>
+                 </li>
+                 <li class="mb-1">
+                    <a href="#" class="text-decoration-none">
+                         <i class="fas fa-credit-card fa-fw"></i>
+                        <span>Check Payment Status</span>
+                    </a>
+                 </li>
+                 <!-- Add other items similarly if needed -->
+            </ul>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main id="main-content" class="p-4 flex-grow-1">
+            <!-- Removed Welcome Message for closer GTU look -->
+            <!-- <h4>Welcome to your Dashboard!</h4> -->
+            <!-- <hr> -->
+
+            <!-- === FEATURE WRAPPED IN A PANEL === -->
+            <div id="company-suggestions-feature" class="info-panel"> <!-- Link target from sidebar -->
+                <div class="panel-heading">
+                    <h5>Company Suggestions Based on CPI/CGPA</h5>
+                </div>
+                <div class="panel-body-content">
+
+                    <!-- Feature Content -->
+                    <p>Enter your CPI/CGPA to see potential companies.</p>
+
+                    <!-- Input Form -->
+                    <div class="form-group row">
+                        <label for="cpiInput" class="col-sm-3 col-form-label">Your CPI/CGPA:</label>
+                        <div class="col-sm-5">
+                             <input type="number" step="0.01" class="form-control form-control-sm" id="cpiInput" placeholder="e.g., 7.5"> <!-- Added form-control-sm -->
+                        </div>
+                        <div class="col-sm-4">
+                             <button id="suggestBtn" class="btn btn-primary btn-sm">Suggest Companies</button> <!-- Added btn-sm -->
+                        </div>
+                    </div>
+
+                    <!-- Results Area -->
+                    <div id="resultsArea" style="margin-top: 20px;">
+                        <h6>Potential Companies:</h6>
+                        <ul id="companyList" class="list-group">
+                             <li class="list-group-item">Enter CPI/CGPA and click Suggest.</li>
+                        </ul>
+                    </div>
+                     <!-- End Feature Content -->
+
+                </div> <!-- End Panel Body -->
+            </div> <!-- End Wrapper Panel Div -->
+            <!-- === END OF FEATURE PANEL === -->
+
+             <!-- Add dummy panels here if needed to fill space -->
+             <!-- Example Dummy Panel -->
+             <!--
+             <div class="info-panel">
+                <div class="panel-heading">
+                    <h5>Another Section</h5>
+                </div>
+                <div class="panel-body-content">
+                    <p>This is another section styled like the GTU panels.</p>
+                </div>
+             </div>
+             -->
+
+        </main>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (Keep at the end) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- Tumhara custom JS file -->
+    <script src="js/script.js"></script> <!-- Assuming js/script.js path -->
+</body>
+</html>
