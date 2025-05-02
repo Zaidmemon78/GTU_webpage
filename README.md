@@ -30,4 +30,4 @@ Significant effort was made to match the original GTU portal's design language.
 | :-------------- | :------------------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------------------- |
 | **Header**      | [PLACEHOLDER: Screenshot Link/Path of Original Header] | [PLACEHOLDER: Screenshot Link/Path of Your Header]       | Matched background color, logo placement, title style, logout button. |
 | **Sidebar**     | [PLACEHOLDER: Screenshot Link/Path of Original Sidebar] | [PLACEHOLDER: Screenshot Link/Path of Your Sidebar]      | Matched background color, link styling, icons, active state, hover.   |
-| **Feature Panel**| (N/A - New Feature)                               | [PLACEHOLDER: Screenshot Link/Path of Your Feature Panel]| Styled the new feature using panels similar to GTU's info sections.   |
+| **Feature Panel**| (N/A - New Feature)                               | [PLACEHOLDER: https://1drv.ms/i/c/6496ba0079bc8da2/EQKrUPpnN39JgHtnbhmVwKcBiuSm8LxSiUk9qKqawqJQOw?e=ugOvV4]| Styled the new feature using panels similar to GTU's info sections.   |
