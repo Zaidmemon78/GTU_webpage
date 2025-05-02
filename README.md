@@ -31,3 +31,6 @@ Significant effort was made to match the original GTU portal's design language.
 | **Header**      | [PLACEHOLDER: Screenshot Link/Path of Original Header] | [PLACEHOLDER:https://1drv.ms/i/c/6496ba0079bc8da2/ESnaBUoDSidPg4Vf1zGpQAgBliwe8vftTi5gBmr-IvCAHw?e=jtRYpf ]       | Matched background color, logo placement, title style, logout button. |
 | **Sidebar**     | [PLACEHOLDER: Screenshot Link/Path of Original Sidebar] | [PLACEHOLDER: https://1drv.ms/i/c/6496ba0079bc8da2/ESnaBUoDSidPg4Vf1zGpQAgBliwe8vftTi5gBmr-IvCAHw?e=jtRYpf]      | Matched background color, link styling, icons, active state, hover.   |
 | **Feature Panel**| (N/A - New Feature)                               | [PLACEHOLDER: https://1drv.ms/i/c/6496ba0079bc8da2/EQKrUPpnN39JgHtnbhmVwKcBiuSm8LxSiUk9qKqawqJQOw?e=ugOvV4]| Styled the new feature using panels similar to GTU's info sections.   |
+
+
+This is my whole project with new feature of company suggestion and i hope u like my idea, i added some links for screenshot to compare both the sides please checkout that links and i was unable to give access of my real account on real website that's why i added some screenshot
